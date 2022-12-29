@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .heart {
+             position: relative;
+             width: 100px;
+             height: 9px;
+            }
+            .heart::before,
+            .heart::after{
+                position: absolute;
+                content: "";
+                left: 53px;
+                top: 7;
+                width: 56px;
+                height: 96px;
+                background: red;
+                border-radius: 50px 50px 0 0;
+                transform: rotate(-44deg);
+                transform-origin: 110% 90%;
+            }
+            .heart::after {
+                left: 0;
+                transform: rotate(41deg);
+                transform-origin: 25% 158%
+            }
+        </style>
+        <title>SHIRLEY</title>
+    </head>
+    <body>
+       <h1>HEART</h1>
+       <div class="heart"></div>
+    </body>
+</html>
